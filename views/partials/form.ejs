@@ -1,0 +1,19 @@
+<form id="search-form" method="POST" action="/sending">
+    <div class="form-group">
+        <label for="to_number">To:</label>
+        <input type="number" class="form-control" name="to_number" id="to_number" placeholder="+19875978564">
+    </div>
+
+    <div class="form-group">
+        <label>Appointment Date:</label>
+        <input name="date" id="date" type="date" name="appointment_date" max="3000-12-31" min="2020-01-01"
+            class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea name="message" class="form-control" id="message" rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Send Message</button>
+</form>
